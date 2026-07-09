@@ -18,6 +18,7 @@ def _env_int(name: str, default: int) -> int:
 def build_search_agent() -> AgentDefinition:
     model = os.getenv("ANTHROPIC_MODEL", "haiku")
     max_turns = _env_int("SUBAGENT_MAX_TURNS", 2)
+    temperature = os.getenv("AGENT_TEMPERATURE", "0.2")
 
     return AgentDefinition(
         description=(

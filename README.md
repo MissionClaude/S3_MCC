@@ -32,7 +32,7 @@ python -m app.test_api_key
 ## Prueba sensilla 
 
 ```powershell
-app/test_simple_research.py
+python app/test_simple_research.py
 ```
 
 ## Ejecutar investigación
@@ -53,3 +53,12 @@ pytest
 - `output/claim_source_mappings.json`
 - `output/run_results.json`
 
+## Archivo .env qie es de cofiguracion
+ANTHROPIC_API_KEY=
+ANTHROPIC_MODEL=
+CLAUDE_MAX_TURNS=3
+SUBAGENT_MAX_TURNS=2
+CLAUDE_TIMEOUT_SECONDS=60
+MAX_DOMAINS=1
+MIN_CLAIMS_PER_DOMAIN=1
+AGENT_TEMPERATURE=0.2
